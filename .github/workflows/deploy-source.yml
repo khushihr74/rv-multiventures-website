@@ -10,7 +10,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Extract website
         run: |
-          ZIP=$(find . -maxdepth 1 -name 'rv-multiventures-website-final*.zip' | head -1)
+          ZIP=$(find . -maxdepth 1 -name rv-multiventures-website-updated.zip | head -1)
           test -n "$ZIP"
           mkdir -p /tmp/site
           unzip -oq "$ZIP" -d /tmp/site
