@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="240" viewBox="0 0 720 240" role="img" aria-labelledby="title desc">
+<title id="title">RV Multiventures logo</title><desc id="desc">Gold RV monogram and RV MULTIVENTURES wordmark on transparent background.</desc>
+<defs><linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f3d48c"/><stop offset=".5" stop-color="#c79b48"/><stop offset="1" stop-color="#f5d99b"/></linearGradient></defs>
+<rect width="720" height="240" fill="none"/>
+<path d="M40 48 L40 185 L73 185 L73 132 L119 185 L164 185 L111 126 C145 117 158 98 158 77 C158 43 133 25 91 25 L40 25 Z M73 54 L91 54 C114 54 126 62 126 80 C126 99 113 107 91 107 L73 107 Z" fill="url(#gold)"/>
+<path d="M165 35 L206 35 L236 132 L266 35 L305 35 L254 185 L216 185 Z" fill="url(#gold)"/>
+<path d="M39 199 H306" stroke="url(#gold)" stroke-width="3"/>
+<text x="340" y="115" fill="url(#gold)" font-family="Georgia,serif" font-size="58" font-weight="bold" letter-spacing="3">RV MULTIVENTURES</text>
+<text x="344" y="158" fill="#d7c7a5" font-family="Arial,sans-serif" font-size="17" letter-spacing="6">ONE GROUP. ONE VISION.</text>
+</svg>

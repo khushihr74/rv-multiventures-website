@@ -1,0 +1,5 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import { ArrowUpRight, BriefcaseBusiness } from "lucide-react";
+export const metadata: Metadata = {title:"Careers",description:"Explore career enquiries across RV MULTIVENTURES business divisions."};
+export default function Careers(){return <main><section className="page-hero"><div className="container"><div className="section-kicker">CAREERS AT RV MULTIVENTURES</div><h1>Bring your talent.<br/><em>Build what’s next.</em></h1><p>We welcome professional enquiries from people interested in opportunities across our business divisions.</p></div></section><section className="section container content-narrow"><div className="career-panel"><BriefcaseBusiness/><h2>Interested in working with us?</h2><p>Tell us about your experience, preferred division and the kind of opportunity you are looking for. Current vacancies will be listed only after they are verified.</p><Link className="btn btn-gold" href="/contact?type=career">Send a career enquiry <ArrowUpRight size={16}/></Link></div></section></main>}
