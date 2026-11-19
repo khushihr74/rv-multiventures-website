@@ -1,0 +1,28 @@
+name: Extract website
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Extract website ZIP
+        run: |
+          mkdir -p /tmp/site
+          unzip -oq rv-multiventures-website-final.zip -d /tmp/site
+          cp -a /tmp/site/. .
+          rm -f rv-multiventures-website-final.zip
+
+      - name: Commit extracted files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet || git commit -m "Extract website files"
+          git push
